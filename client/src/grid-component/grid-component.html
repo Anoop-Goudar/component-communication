@@ -1,0 +1,25 @@
+<div class="pull-left col-md-12">
+  <h3> Sample Data </h3>
+  <div class="row row-eq-height">
+    <div class="col-md-4">
+      <h4>Start Date</h5>
+    </div>
+    <div class="col-md-4">
+      <h4>End Date</h5>
+    </div>
+    <div class="col-md-4">
+      <h4>Balance</h5>
+    </div>
+  </div>
+  <div ng-repeat="data in vm.dataset">
+    <div class="col-md-4">
+      <p> {{ data.date }} </p>
+    </div>
+    <div class="col-md-4">
+      <p> {{ data.date }} </p>
+    </div>
+    <div class="col-md-4">
+      <p> {{ data.balance }}</p>
+    </div>
+  </div>
+</div>
