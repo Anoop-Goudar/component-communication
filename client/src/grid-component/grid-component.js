@@ -2,14 +2,14 @@
   angular.module('app')
   .component('grid', {
     bindings: {
-      src: "="
+      src: "=",
+      filterBy: "<"
     },
-    templateUrl: 'grid-component/grid-component.html',
     controller: GridController,
-    controllerAs: 'vm'
-  });
+    controllerAs: 'vm',
+    templateUrl: 'grid-component/grid-component.html'
 
-  GridController.$inject = [];
+  });
 
   function GridController() {
     var vm = this;

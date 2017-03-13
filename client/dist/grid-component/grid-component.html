@@ -1,4 +1,4 @@
-<div class="pull-left col-md-12">
+<div class="col-md-12">
   <h3> Sample Data </h3>
   <div class="row row-eq-height">
     <div class="col-md-6">
@@ -8,7 +8,7 @@
       <h4>Balance</h5>
     </div>
   </div>
-  <div ng-repeat="data in vm.src">
+  <div ng-repeat="data in vm.src | filter: vm.filter(data)">
     <div class="col-md-6">
       <p> {{ data.date }} </p>
     </div>
